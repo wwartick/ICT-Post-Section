@@ -15,4 +15,115 @@ body{
 .main-container{
     display: flex;
     flex-direction: column;
+    width:480px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+h5{
+    padding-left: 1rem;
+    color: #14213D;
+}
+
+textarea{
+    aspect-ratio: 1/.1;
+    padding: 0 1rem;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+   
+    &::placeholder{
+        font-weight: 700;
+    }
+}
+
+#camera{
+    color: orangered;
+}
+
+#attach{
+    color: blue;
+}
+
+#happy{
+    color: green;
+}
+
+.icon-bar{
+    display: flex;
+    gap: .5rem;
+    padding-left: .55rem;
+    transform:translateY(3px) ;
+}
+
+.dropdown{
+    font-size: .75rem;
+    position: absolute;
+    top: 2.5rem;
+    text-align: center;
+    height: 1.5rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    background-color: #14213D;
+}
+
+ion-icon{
+    font-size: 1.75rem;
+    padding: .45rem;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+
+    &:hover{
+        background-color: rgba(128, 128, 128, 0.342);
+        cursor: pointer;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.main-footer{
+    margin-top: -.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    align-items: flex-end;
+    height: fit-content;
+}
+
+button{
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    border: 2px solid #FCA311;
+    padding: .5rem 1rem;
+    transition: all 250ms linear;
+
+    &:hover{
+        scale: 1.1;
+        background-color: #14213D;
+        color: #E5E5E5;
+        cursor: pointer;
+    }
+
+    &:active{
+        scale: .95;
+    }
 }
