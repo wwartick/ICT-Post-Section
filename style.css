@@ -76,6 +76,13 @@ textarea{
     border-radius: 5px;
     color: white;
     background-color: #14213D;
+    transition: all 250ms linear;
+    transform-origin: top;
+    scale: 1;
+}
+
+.hidden{
+    scale: 0;
 }
 
 ion-icon{
@@ -96,9 +103,6 @@ ion-icon{
     }
 }
 
-.hidden{
-    display: none;
-}
 
 .main-footer{
     margin-top: -.8rem;
